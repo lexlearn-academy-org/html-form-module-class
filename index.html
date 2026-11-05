@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Halima Musa Yoga — Reserve Your Spot</title>
+
+        <!--
+    Connect your tools here:
+      1. halima_style.css
+      2. Two Google Fonts (a display font and a body font)
+      3. Font Awesome
+  -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+            integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <link href="./halima_style-2.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- <div style="display: flex; align-items: center">
+            <div
+                style="background-color: red; height: 100px; width: 100px"
+            ></div>
+            <div
+                style="background-color: green; height: 200px; width: 200px"
+            ></div>
+        </div> -->
+        <header class="site-header">
+            <a href="#" class="logo">
+                <!-- ICON: a lotus, leaf, or spa icon before the name -->
+                <i class="fa-solid fa-spa"></i>
+                Halima Musa Yoga
+            </a>
+            <p class="header-note">Kaduna · Since 2019</p>
+        </header>
+
+        <main class="booking-layout">
+            <!-- ─── LEFT: INTRO + STUDIO INFO ─────────────── -->
+            <section class="intro">
+                <p class="eyebrow">Class Booking</p>
+                <h1>Find Your Breath. Reserve Your Mat.</h1>
+                <p class="intro-text">
+                    Small classes of no more than twelve people, so every body
+                    gets attention. Fill in the form and I will confirm your
+                    spot within a few hours.
+                </p>
+
+                <ul class="info-list">
+                    <li>
+                        <!-- ICON: clock -->
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Mon to Sat, 7am to 8pm</span>
+                    </li>
+                    <li>
+                        <!-- ICON: location pin -->
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>22 Ahmadu Bello Way, Kaduna</span>
+                    </li>
+                    <li>
+                        <!-- ICON: phone -->
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+234 806 000 1122</span>
+                    </li>
+                    <li>
+                        <!-- ICON: person or users -->
+                        <i class="fa-solid fa-users"></i>
+                        <span>Maximum 12 people per class</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- ─── RIGHT: THE FORM ───────────────────────── -->
+            <section class="form-card">
+                <h2>Reserve Your Spot</h2>
+
+                <!--
+        BUILD THE FORM HERE.
+
+        The form sends with the post method. Use action="#" for now.
+        Wrap each label and field together in <div class="field">.
+        Wrap each radio group and checkbox group in <fieldset class="choice-group"> with a <legend>.
+        Every field needs a label, an id, and a name.
+
+        FIELDS, IN THIS ORDER:
+
+         1. Full name        required, text
+         2. Email            required, must be a real email format
+         3. Phone            exactly 11 digits, shows a number keypad on mobile
+         4. Class            dropdown. First option says "Choose a class" and has no value.
+                             Then: Vinyasa Flow, Beginner Basics, Power Yoga, Restorative Evening
+         5. Date             date picker, required
+         6. Preferred time   choose one: Morning (7am), Afternoon (12pm), Evening (6pm)
+         7. Guests           number, minimum 1, maximum 4, starts at 1
+         8. Goals            choose any: Stress relief, Flexibility, Strength, Better sleep
+         9. Notes            multi-line, 4 rows, optional. For injuries or special needs.
+        10. Terms            single checkbox, required: "I understand the cancellation policy"
+
+        BUTTONS:
+          Reserve Spot  (sends the form)
+          Clear         (resets the form)
+      -->
+                <form action="#" method="post">
+                    <div class="field">
+                        <label for="fullname">Full Name</label>
+                        <input name="fullname" id="fullname" type="text" />
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input name="email" id="email" type="email" />
+                    </div>
+
+                    <div class="field">
+                        <label for="phone_number">Phone Number</label>
+                        <input
+                            name="phone_number"
+                            id="phone_number"
+                            type="number"
+                            value="1"
+                        />
+                    </div>
+
+                    <div class="field">
+                        <label for="class">Class</label>
+                        <select name="class" id="class">
+                            <option value="">Choose a class</option>
+                            <option value="Vinyasa Flow">Vinyasa Flow</option>
+                            <option value="Beginner Basics">
+                                Beginner Basics
+                            </option>
+                            <option value="Power Yoga">Power Yoga</option>
+                            <option value="Restorative Evening">
+                                Restorative Evening
+                            </option>
+                        </select>
+                    </div>
+
+                    <!-- <div class="field">
+                        <label for="date">Date</label>
+                        <input name="date" type="date" id="date" />
+                    </div>
+
+                    <fieldset class="choice-group">
+                        <legend>Preferred Time</legend>
+
+                        <input
+                            type="radio"
+                            name="preferred_time"
+                            id="morning"
+                            value="Morning (7am)"
+                        />
+                        <label for="morning">Morning (7am)</label>
+
+                        <input
+                            type="radio"
+                            name="preferred_time"
+                            id="afternoon"
+                            value="Afternoon (12pm)"
+                        />
+                        <label for="afternoon">Afternoon (12pm)</label>
+                    </fieldset>
+
+                    <div class="field">
+                        <label>Notes</label>
+                        <textarea
+                            rows="4"
+                            placeholder="For injuries or special needs"
+                        ></textarea>
+                    </div>
+
+                    <fieldset class="choice-group">
+                        <legend>Terms</legend>
+
+                        <input type="checkbox" name="terms" id="terms" />
+                        <label for="terms"
+                            >I understand the cancellation policy</label
+                        >
+                    </fieldset> -->
+                </form>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2025 Halima Musa Yoga. Breathe in. Breathe out.</p>
+        </footer>
+    </body>
+</html>

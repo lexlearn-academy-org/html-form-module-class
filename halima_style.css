@@ -1,0 +1,91 @@
+/* ══════════════════════════════════════════════
+   LexLearn Academy — Engineering Track
+   Week 9: HTML Forms — Practice
+   Character: Halima Musa, Yoga Studio Owner, Kaduna
+   ══════════════════════════════════════════════
+
+   BRAND MOOD
+   Calm, soft, natural. Sage green, warm sand, and a deep forest
+   green for text and buttons. Lots of space. Rounded corners.
+
+   WHAT THE PAGE SHOULD LOOK LIKE
+
+   Page
+   - Sand background, forest green text, a friendly display font for
+     headings and a clean font for everything else.
+
+   Header
+   - Logo with icon on the left, small note on the right, one line.
+
+   Layout
+   - Two columns on a wide screen: intro on the left, form card on
+     the right. The form card is the wider of the two.
+   - On a narrow screen, they stack: intro first, form below.
+
+   Intro
+   - Small uppercase eyebrow with wide letter spacing.
+   - Big headline. Comfortable paragraph.
+   - Info list: each line has an icon in sage green, aligned with
+     its text.
+
+   Form card
+   - White card, rounded corners, soft shadow, generous padding.
+   - Every field: label above input, even spacing between fields.
+   - Inputs, dropdown, and textarea fill the card width, have the
+     same font as the page, rounded corners, and a thin border.
+   - When a field is focused, it shows a clear green glow instead
+     of the browser default.
+   - Radio and checkbox groups: options sit in a row and wrap,
+     each with its input beside its label. The legend looks like a
+     field label.
+   - Name and email sit side by side on wide screens.
+   - Submit button: forest green, fills on hover to a lighter
+     green. Clear button: outlined, no fill.
+   - Both buttons sit in one row.
+   - Tick boxes and radio buttons should pick up the sage green.
+
+   Footer
+   - Centred, small, quiet.
+
+   YOUR JOB: write all the CSS. Use the Forms note and the earlier
+   notes on Flexbox, Positioning, Fonts, and Icons.
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: F4E8C1;
+    color: #081713;
+    font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Google Sans", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+header .logo {
+    font-size: 20px;
+    text-decoration: none;
+    color: #1b4d3e;
+}
+
+main {
+    display: flex;
+    max-width: 1060px;
+    margin: 20px auto;
+}
