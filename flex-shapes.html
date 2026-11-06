@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flex Shapes</title>
+
+        <style>
+            .box-container {
+                display: flex;
+                background-color: rgb(209, 228, 235);
+                padding: 10px;
+            }
+
+            .box {
+                width: 700px;
+                height: 300px;
+            }
+
+            .red {
+                background-color: red;
+                flex-shrink: 0;
+            }
+            .green {
+                background-color: green;
+                flex-shrink: 1;
+            }
+            .blue {
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box-container">
+            <div class="box red"></div>
+            <div class="box green"></div>
+            <div class="box blue"></div>
+        </div>
+    </body>
+</html>

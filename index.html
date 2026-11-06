@@ -19,7 +19,7 @@
             referrerpolicy="no-referrer"
         />
 
-        <link href="./halima_style-2.css" rel="stylesheet" />
+        <link href="./halima_style.css" rel="stylesheet" />
     </head>
     <body>
         <!-- <div style="display: flex; align-items: center">
@@ -140,7 +140,7 @@
                         </select>
                     </div>
 
-                    <!-- <div class="field">
+                    <div class="field">
                         <label for="date">Date</label>
                         <input name="date" type="date" id="date" />
                     </div>
@@ -151,8 +151,8 @@
                         <input
                             type="radio"
                             name="preferred_time"
-                            id="morning"
                             value="Morning (7am)"
+                            id="morning"
                         />
                         <label for="morning">Morning (7am)</label>
 
@@ -163,6 +163,58 @@
                             value="Afternoon (12pm)"
                         />
                         <label for="afternoon">Afternoon (12pm)</label>
+
+                        <input
+                            type="radio"
+                            name="preferred_time"
+                            id="evening"
+                            value="Evening (6pm)"
+                        />
+                        <label for="evening">Evening (6pm)</label>
+                    </fieldset>
+
+                    <!-- 
+                        name=value
+                    -->
+                    <div class="field">
+                        <label for="guests">Guests</label>
+                        <input type="number" min="1" max="4" value="1" />
+                    </div>
+
+                    <fieldset class="choice-group">
+                        <legend>Goals</legend>
+
+                        <input
+                            type="checkbox"
+                            name="goals"
+                            value="Stress Relief"
+                            id="stress_relief"
+                        />
+                        <label for="stress_relief">Stress Relief</label>
+
+                        <input
+                            type="checkbox"
+                            name="goals"
+                            value="Flexibility"
+                            id="flexibility"
+                        />
+                        <label for="flexibility">Flexibility</label>
+
+                        <input
+                            type="checkbox"
+                            name="goals"
+                            value="Strength"
+                            id="strength"
+                        />
+                        <label for="strength">Strength</label>
+
+                        <input
+                            type="checkbox"
+                            name="goals"
+                            value="Better Sleep"
+                            id="better_sleep"
+                        />
+                        <label for="better_sleep">Better Sleep</label>
                     </fieldset>
 
                     <div class="field">
@@ -180,7 +232,12 @@
                         <label for="terms"
                             >I understand the cancellation policy</label
                         >
-                    </fieldset> -->
+                    </fieldset>
+
+                    <div>
+                        <button type="submit">Reserve Spot</button>
+                        <button type="reset">Clear</button>
+                    </div>
                 </form>
             </section>
         </main>

@@ -60,7 +60,7 @@
 }
 
 body {
-    background: F4E8C1;
+    background: #f4e8c1;
     color: #081713;
     font-family: "Roboto", sans-serif;
 }
@@ -88,4 +88,32 @@ main {
     display: flex;
     max-width: 1060px;
     margin: 20px auto;
+}
+
+.intro {
+    width: 30%;
+    flex: 1;
+}
+
+.form-card {
+    flex: 2;
+}
+
+.eyebrow {
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #426359;
+}
+
+.intro h1 {
+    font-size: 3rem; /* Makes it a "Big headline" */
+    line-height: 1.2; /* Tightens the spacing between lines */
+    margin-bottom: 1rem; /* Adds space below the headline */
+}
+
+.intro p {
+    font-size: 1.125rem; /* Slightly larger than standard text for readability */
+    line-height: 1.6; /* "Comfortable paragraph" line spacing */
+    color: #2b3a36; /* Slightly softer than pure black for a modern, comfortable look */
 }
